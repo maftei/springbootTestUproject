@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Form submitted</h1>
+<!--<p><span th:text=" 'Username :'+ ${user.username}"></span></p>-->
+<!--<p><span th:text=" 'Password :'+${user.password}" ></span></p>-->
+
+<form action="/projects/save"  th:object="${project}" method="post">
+    <div class="formcontainer">
+        <div class="container">
+            <label><strong>Project Name</strong></label>
+            <input type="text" placeholder="Enter Project name" required>
+            <label><strong>Project description</strong></label>
+            <input type="descritpion" placeholder="Enter project decscription" required>
+            <select>
+                <option th:value="NOTSTARTED"> Not Started</option>
+                <option th:value="INPROGRESS"> In Progress</option>
+                <option th:value="COMPLETED"> Completed</option>
+            </select>
+            <button type="submit">Create Project</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
