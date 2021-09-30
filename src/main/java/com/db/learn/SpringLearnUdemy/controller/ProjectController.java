@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/projects")
 public class ProjectController {
-
+//new
     @RequestMapping ("/new")
     public String displayProjectForm(Model model){
         Project aProject =new Project();
