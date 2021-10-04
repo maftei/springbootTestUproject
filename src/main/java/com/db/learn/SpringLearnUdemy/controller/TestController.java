@@ -39,7 +39,8 @@ public class TestController {
 
     //also, we have another example of redirect data, the same thing as above
     //but this time we will use redirect
-    @RequestMapping(value="/create", method = RequestMethod.POST)//this method will handle the form
+    //@RequestMapping(value="/create", method = RequestMethod.POST)
+    @PostMapping("/create")//this method will handle the form
     public String processUserDetails(User user, RedirectAttributes attr){
         attr.addFlashAttribute("user",user);
         return "redirect:/display";
