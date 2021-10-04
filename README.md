@@ -1,7 +1,7 @@
 ## Table of contents
-* This is a spring boot test project
-* Spring MVC 
-* TeamCity
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
 ## General info
 This project is test Spring MVC project
