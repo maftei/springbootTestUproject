@@ -4,7 +4,8 @@
 * [Setup](#setup)
 
 ## General info
-This project is test Spring MVC project
+This project is test Spring MVC project, I practice all  Spring MVC Annotations, H2 in memeory database, Thymeleaf. 
+CRUD operations, transfer of parameters, creata build pipeleine from TeamCity.
 	
 ## Technologies
 Project is created with:
