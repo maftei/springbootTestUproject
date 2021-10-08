@@ -16,7 +16,7 @@ public class ProjectController {
     @Autowired
     ProjectRepository proRepo;
 
-    @RequestMapping ("/new")
+    @RequestMapping ("/new") // when you want to sent data or retrieve data you use Model
     public String displayProjectForm(Model model){
         Project aProject =new Project();
         model.addAttribute("project", aProject);
