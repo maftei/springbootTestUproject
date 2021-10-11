@@ -17,19 +17,21 @@ public class Project {
     private String description;
 
     public Project(){
-//to review
+
     }
     public Project(long projectId, String name, String stage, String description) throws Exception {
         this.projectId=projectId;
         setName(name);
         setStage(stage);
-        this.description=description;
+        setDescription(description);
     }
 
     public long getProjectId(){
+
         return projectId;
     }
     public String getName(){
+
         return name;
     }
     public void setName(String name) throws Exception {
@@ -54,7 +56,7 @@ public class Project {
         if(description!=null){
             this.description=description;
         }
-        else throw new Exception("error messge: description can't be null");
+        else throw new Exception("error message: description can't be null");
     }
 
 }
