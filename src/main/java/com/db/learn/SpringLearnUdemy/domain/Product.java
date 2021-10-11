@@ -3,6 +3,7 @@ package com.db.learn.SpringLearnUdemy.domain;
 
 //https://www.udemy.com/course/spring-framework-web-development-2020/learn/lecture/16739766?start=15#announcements
 
+
 public class Product {
     private int id;
     private String name;
